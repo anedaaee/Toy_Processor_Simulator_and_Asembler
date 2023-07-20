@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Toy Assembler And Simulator </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+ 
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Toy Assembler And Simulator<span>.</span></a></h1>
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#features">Assembler</a></li>
+          <li><a class="nav-link scrollto " href="#services">Simulator</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1>Powerful Digital Assembler And  Simulator with Toy processor<span>.</span></h1>
+          <h2>We are team of talented digital Design Researcher</h2>
+        </div>
+      </div>
+
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-store-line"></i>
+            <h3><a href="#features">Assembler</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line"></i>
+            <h3><a href="#services">Simulator</a></h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+            <h3>A toy processor is a simplified version of a central processing unit (CPU) designed for educational or recreational purposes. It is typically built using basic electronic components and serves as a tool for learning about computer architecture and programming concepts.</h3>
+            <p class="fst-italic">
+              Toy processors often feature simplified instruction sets and limited functionality compared to real-world CPUs. They are usually designed to perform basic arithmetic and logical operations, allowing users to understand fundamental concepts such as data processing, memory, and control flow.
+
+              Building a toy processor can be a fun and educational project for individuals interested in computer science and electronics. It provides hands-on experience with circuitry, logic gates, and assembly language programming.
+
+              There are various resources available online that provide instructions, circuit diagrams, and tutorials for building toy processors. These resources may include step-by-step guides, schematics, and programming examples to help users understand the inner workings of a CPU.
+
+              Keep in mind that toy processors are not capable of running complex operating systems or handling advanced applications. They are primarily educational tools aimed at introducing basic computer architecture concepts.
+            </p>
+            <p>
+              You can see mode information of Toy with <a href="./doc/Toy.pdf">this link</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="image col-lg-6" style='background-image: url("assets/img/modern-cpu-background-with-linear-style_23-2147976629.avif");' data-aos="fade-right"></div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bx bx-receipt"></i>
+              <h4>Try to Assemble your code</h4>
+              <p>Upload your code file here to transform it to machin language</p>
+              <div class="upload-file">
+                  <p>Upload File Here</p>
+                  <img style="width: 50%;" src="./assets/img/undraw_File_sync_re_0pcx.png"></img>
+                  <form>
+                    <input type="file" name="inputCode" id="inputCode" style="">
+                    <br>
+                    <input type="button" value="Upload" onclick='handleUploadFile()' style="background-color: #ffc451;margin: 5px; border-width: 0; color: white; border-radius: 5px;">
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="container" id='table' data-aos="fade-up" style=" text-align: center;justify-content: center;align-items: center;">
+         
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="image col-lg-6" style='background-image: url("assets/img/CEVA_Blog_Post_Image_Simulator_221013.jpg");' data-aos="fade-right"></div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+              <h4>Try to simulate your code</h4>
+              <p>Upload your <h3>ASSEMBLED</h3>code file here to simulate it</p>
+              <div class="upload-file">
+                  <p>Upload File Here</p>
+                  <img style="width: 50%;" src="./assets/img/undraw_File_sync_re_0pcx.png"></img>
+                  <form>
+                    <input type="file" name="inputCodeSimulate" id="inputCodeSimulate" style="">
+                    <br>
+                    <input type="button" value="Upload" onclick='handleUploadFileSimulator()' style="background-color: #ffc451;margin: 5px; border-width: 0; color: white; border-radius: 5px;">
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="container" id='result' data-aos="fade-up">
+         
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d799.7611392372609!2d48.50157166962673!3d36.697467173568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ff61a726fc6e519%3A0x33ad0e667a81e7b0!2zWmFuamFuIFByb3ZpbmNlLCBaYW5qYW7YjCDYrtuM2KfYqNin2YYg2KjZh9in2LHYp9mGLCBJcmFu!5e0!3m2!1sen!2s!4v1688918093281!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>B6,V5,baharan,zanjan,iran</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>anedaaee@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+98 938 836 9873</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Toy Assembler and Simulator<span>.</span></h3>
+              <p>
+                Zanjan,Iran<br><br>
+                <strong>Phone:</strong> +98 938 836 9873<br>
+                <strong>Email:</strong> anedaaee@gmail.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#features">Assembler</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">simulator</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="./assets/js/AssemblerCore.js"></script>
+  <script src="./assets/js/simulatorCore.js"></script>
+  <script src="./assets/js/Assemble.js"></script>
+  <script src="./assets/js/Simulator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.ORG 64
+.Data A 25
+.Data B 26
+.Data C
+START
+LDA A
+ADC B
+SBC B
+XOR B
+JMP Label2
+.Label1
+TAT
+LDC B
+BCC B
+JMP Label3
+.ORG 103
+.Label2
+OR B
+ROR
+AND B
+JMP Label1
+.ORG 212
+.Label3
+STT
+STA B
+FINISH

@@ -1,0 +1,40 @@
+.ORG 64 //set address to 64
+.Data A 1 //create variable A=1
+.Data B 1 //create variable B=1
+.Data temp 0 //create variable temp=0 which is used for save A + B
+.Data index 2 //create variable index=2 which os used to show which state we are now . its 2 becuse we already have 2 state (1,1)
+.Data sum 2 //create variable sum=2 which is used for save sum of fib statement . its 2 becuse we already have 1 + 1
+.Data value1 1 //create variable value1=1 to save immidiate 1 
+.Data value0 0 //create variable value0=0 to save immidiate 0
+.Data maxIndex 10 //create variable maxIndex=1 it is number of state which we want to reach
+.Data value2 2 //create variable value2=2 to save immidiate 2 
+START //this label should be there to show that we start our program from here
+LDA maxIndex //load maxIndex
+SBC value2 //maxIndex - 2 to check if maxIndex is bigger than 2
+BNE negative //check if maxIndex-2 != 0 if its true jump to check if its not negative
+JMP END //if maxIndex == 0 then jump to end
+.negative
+BCC END //check if maxIndex-2 < 0 if its true it jump at END Label 
+JMP loop //check if maxIndex-2 < 0 is false JUMP at loop Label
+.loop
+LDA A //Load A
+ADC B //A+B
+STA temp //temp = A+B
+LDA B //Load B
+STA A //A=B
+LDA temp //Load temp
+STA B //B=temp
+LDA sum	//load sum
+ADC B //sum + B (B = temp (temp = lastB + 1))
+STA sum	//store sum
+LDA index //Load index
+ADC value1 //index++
+STA index //save index
+LDA maxIndex //Load maxIndex
+SBC index //maxIndex - Index
+BNE loop //if maxIndex - Index != 0 JUMP loop
+LDA sum	//if maxIndex - Index == 0 load sum
+TAT //save sum to T register
+LDA temp //load temp = last(A+B) or last state
+.END
+FINISH //this flag is for to show that the program is finished

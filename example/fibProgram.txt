@@ -1,0 +1,40 @@
+.ORG 64
+.Data A 1
+.Data B 1
+.Data temp 0
+.Data index 2
+.Data sum 2
+.Data value1 1
+.Data value0 0
+.Data maxIndex 10
+.Data value2 2
+START
+LDA maxIndex
+SBC value2
+BNE checkNegativ
+JMP END
+.checkNegativ
+BCC END
+JMP loop
+.loop
+LDA A
+ADC B
+STA temp
+LDA B
+STA A
+LDA temp
+STA B
+LDA sum
+ADC B
+STA sum
+LDA index
+ADC value1
+STA index
+LDA maxIndex
+SBC index
+BNE loop
+LDA sum
+TAT
+LDA temp
+.END
+FINISH
