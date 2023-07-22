@@ -1,0 +1,24 @@
+.ORG 64
+.Data value2 2
+.Data value1 1
+.Data value0 0
+.Data number 6
+START
+.check1
+LDA number
+SBC value1
+BNE checkZero
+JMP END
+.checkZero
+LDA number
+BNE minus2
+JMP END
+.minus2
+LDA number
+SBC value2
+STA number
+JMP check1
+.END
+LDA number
+TAT
+FINISH

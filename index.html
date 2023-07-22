@@ -39,6 +39,7 @@
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#features">Assembler</a></li>
           <li><a class="nav-link scrollto " href="#services">Simulator</a></li>
+          <li><a class="nav-link scrollto " href="#example">Examples</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -69,6 +70,12 @@
           <div class="icon-box">
             <i class="ri-bar-chart-box-line"></i>
             <h3><a href="#services">Simulator</a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i class="ri-bar-chart-box-line"></i>
+            <h3><a href="#example">Examples</a></h3>
           </div>
         </div>
       </div>
@@ -153,9 +160,6 @@
                     <input type="button" value="Upload" onclick='handleUploadFileSimulator()' style="background-color: #ffc451;margin: 5px; border-width: 0; color: white; border-radius: 5px;">
                   </form>
               </div>
-              <p>
-                You can see example of fibonacci program here with <a href="./example/fibProgram.txt">this link</a>.
-              </p>
             </div>
           </div>
         </div>
@@ -165,7 +169,82 @@
          
       </div>
     </section>
+    <section id="example" class="services">
+      <div class="container" data-aos="fade-up">
 
+        <div class="row">
+          
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150"  style="text-align: left;">
+              <h4>Fibonacci sequence</h4>
+              <p>In mathematics, the Fibonacci sequence is a sequence in which each number is the sum of the two preceding ones.</p>
+              <br/>
+              <h4>How to run Fibonacci sequence with toy:</h4>
+              <ul>
+                <li>download toy program from <a href="./example/fibProgram.txt">this link</a></li>
+                <li>set any number (>2) which you want to find fibonacci sequence by changing<h5> maxIndex(.Date)</h5></li>
+                <li>upload <a href="#features">here</a> to compile</li>
+                <li>download compile .txt file</li>
+                <li>upload compiled file <a href="#services">here</a> to simulate</li>
+                <li>in the last of run table T register shows sum of maxIndex'th number of fibonacci sequence and the A register shows the maxIndex'th element of fibonacci sequence.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="image col-lg-6" style='background-image: url("assets/img/Fibonacci_Squares.svg.png"); background-repeat: no-repeat; margin-top: 7%;' data-aos="fade-right"></div>
+        </div>
+
+      </div>
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="image col-lg-6" style='background-image: url("assets/img/animated-counter-featured.png"); background-repeat: no-repeat; margin-top: 7%;' data-aos="fade-right"></div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150"  style="text-align: left;">
+              <h4>Counter program</h4>
+              <p>In digital logic and computing, a counter is a device which stores the number of times a particular event or process has occurred, often in relationship to a clock. The most common type is a sequential digital logic circuit with an input line called the clock and multiple output lines.</p>
+              <br/>
+              <h4>How to run counter program with toy:</h4>
+              <ul>
+                <li>download toy program from <a href="./example/counterProgram.txt">this link</a></li>
+                <li>set min and max by changing <h5>min and max</h5> in file</li>
+                <li>upload <a href="#features">here</a> to compile</li>
+                <li>download compile .txt file</li>
+                <li>upload compiled file <a href="#services">here</a> to simulate</li>
+                <li>T register is a counter register and it will count from min to max</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150"  style="text-align: left;">
+              <h4>find Remainder of 2program</h4>
+              <br/>
+              <h4>How to run Remainder program with toy:</h4>
+              <ul>
+                <li>download toy program from <a href="./example/findReminingProgram.txt">this link</a></li>
+                <li>set any number to find Remainder by two by changing <h5>number</h5> in file</li>
+                <li>upload <a href="#features">here</a> to compile</li>
+                <li>download compile .txt file</li>
+                <li>upload compiled file <a href="#services">here</a> to simulate</li>
+                <li>A register is a Remainder register and it will show 0 or 1</li>
+              </ul>
+            </div>
+          </div>
+          <div class="image col-lg-6" style='background-image: url("assets/img/remainder-7-2-pups.svg"); background-repeat: no-repeat; margin-top: 7%;' data-aos="fade-right"></div>
+        </div>
+
+      </div>
+      <div class="container" id='result' data-aos="fade-up">
+         
+      </div>
+    </section>
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
@@ -234,6 +313,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#features">Assembler</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#services">simulator</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#example">Examples</a></li>
             </ul>
           </div>
 

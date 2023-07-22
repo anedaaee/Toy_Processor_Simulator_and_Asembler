@@ -82,5 +82,6 @@ const handleUploadFile = async () => {
         const tableDiv = document.getElementById('table')
         tableDiv.innerHTML = htmlString;
     }
+    fileInput.value = '';
         
 }

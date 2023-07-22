@@ -6,7 +6,7 @@
 .Data sum 2
 .Data value1 1
 .Data value0 0
-.Data maxIndex 10
+.Data maxIndex 12
 .Data value2 2
 START
 LDA maxIndex

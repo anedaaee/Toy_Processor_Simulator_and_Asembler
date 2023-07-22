@@ -1,0 +1,22 @@
+.ORG 64
+.Data min 10
+.Data max 16
+.Data value1 1
+START
+LDA max
+SBC min
+BNE checkNegativ
+JMP END
+.checkNegativ
+BCC END
+JMP loop
+.loop
+LDA min
+TAT
+ADC value1
+STA min
+LDA max
+SBC min
+BNE checkNegativ
+.END
+FINISH
