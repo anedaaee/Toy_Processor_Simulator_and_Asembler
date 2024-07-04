@@ -102,9 +102,11 @@ const storeInMemory = async (address,value) => {
     }
 }
 const handleINS = async (op,src) => {
+    let jump = false
     if(op === '0000'){
         pcBinary = src
         pc = await convertBinaryToDecimal(src)
+        jump = true
         result.push({
             op : `JMP PC:=${pcBinary}`,
             A : A,
@@ -462,7 +464,9 @@ const handleINS = async (op,src) => {
             pc : pcBinary
         })
     }
-    pc += 1
+    if (!jump){
+        pc += 1
+    }
     pcBinary = await convertTo12BitBinary(pc)
 }
 
@@ -503,6 +507,7 @@ const simulate = async (file) => {
                         }
                         index++;
                         await handleINS(instructure.substring(0,4),instructure.substring(4));
+                        console.log(pcBinary,finishAdress)
                         if(pcBinary === finishAdress){
                             break
                         }

@@ -60,14 +60,14 @@ const handleDotDate = async (lineSplit,addressBinary,i) => {
     }
 }
 
-const handleLable = async (lineSplit,addressBinary) => {
+const handleLable = async (lineSplit,addressBinary,addressBinary2) => {
     data.push({
         name : lineSplit[0].substring(1),
         address : addressBinary
     })
     memory.push({
         address : addressBinary ,
-        value : '0000'+addressBinary,
+        value : '0000'+addressBinary2,
     })
 }
 const handleAKindInstructor = async (lineSplit,addressBinary,i) => {
@@ -145,6 +145,7 @@ const assemble = async (file) => {
                             address = parseInt(lineSplit[1]);
                             address -= 1;
                             addressBinary = await convertTo12BitBinary(address);
+                            
                         }else{
                             let error = (`COMPILE ERROR: \n\tADRESS MUST BE BETWEEN [0,2 ^ 12)\n\tLINE:${i+1}`)
                             await showError(error)
@@ -152,7 +153,8 @@ const assemble = async (file) => {
 
                     }else{
                         if(lineSplit[0] !== '.ORG' && lineSplit[0] !== '.Data'){
-                            await handleLable(lineSplit,addressBinary)
+                            let addressBinary2 = await convertTo12BitBinary(address + 1);
+                            await handleLable(lineSplit,addressBinary,addressBinary2)
                         }
                     }
                 }
