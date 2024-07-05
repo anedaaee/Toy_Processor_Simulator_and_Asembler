@@ -1,0 +1,34 @@
+library ieee;
+use ieee.STD_LOGIC_1164.all;
+use ieee.numeric_std.all;
+
+
+entity ROR_function is 
+	generic (au_bw : integer := 16);
+	port (
+		a: in std_logic_vector(au_bw - 1 downto 0);
+		c_in : in std_logic;
+		output : out std_logic_vector(au_bw - 1 downto 0) := (others => '0');
+		cout : out std_logic := '0'
+	);
+end ROR_function;
+
+
+architecture Behavioral of ROR_function is
+	signal zero_value : std_logic_vector(au_bw - 1 downto 0) := (others => '0');
+begin
+	process(a,c_in)
+	
+		variable output_temp : std_logic_vector(au_bw downto 0);
+	begin
+		output_temp :=  a & c_in ;
+		
+		output_temp := output_temp(0) & output_temp(au_bw downto 1);
+
+		output <= std_logic_vector(output_temp(au_bw - 1 downto 0));
+		cout   <= std_logic(output_temp(au_bw));
+
+	end process;
+
+
+end Behavioral;

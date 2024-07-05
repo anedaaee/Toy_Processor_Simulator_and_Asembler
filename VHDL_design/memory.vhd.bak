@@ -1,0 +1,99 @@
+library ieee;
+use ieee.STD_LOGIC_1164.all;
+use ieee.numeric_std.all;
+use IEEE.STD_LOGIC_TEXTIO.all;
+use IEEE.STD_LOGIC_UNSIGNED.all;
+use std.textio.all;
+
+entity memory is 
+	generic (
+		address_length : integer := 12 ;
+		data_length : integer := 16
+	);
+	port (
+		address : in std_logic_vector(address_length - 1 downto 0) := (others => '0');
+		write_data : in std_logic_vector(data_length - 1 downto 0) := (others => '0');
+		clk , mem_r , mem_w: in std_logic := '0';
+		data_out : out std_logic_vector(data_length - 1 downto 0) := (others => '0')
+	);
+
+end memory;
+
+
+architecture Behavioral of memory is
+	type mem_array is array (0 to 2 ** address_length - 1) of std_logic_vector(data_length - 1 downto 0);
+	signal memory_ds : mem_array := (others => (others => '0'));
+	signal is_initialized : boolean := false;
+begin
+	
+	process(clk,address,write_data,mem_r , mem_w) 
+		file data_file : text;
+		variable line_buffer : line;
+		variable file_data : std_logic_vector(data_length - 1 downto 0) := (others => '0');
+		variable file_address : std_logic_vector(address_length - 1 downto 0) := (others => '0');
+		variable address_read : integer;
+		variable fstatus : file_open_status;
+		variable temp_str : string(1 to 29); 
+
+	begin 
+		if not is_initialized then 
+			is_initialized <= true;
+
+			file_open(fstatus, data_file, "C:/Users/neos/Desktop/mem_data.txt.txt", read_mode);
+			if fstatus /= open_ok then
+                		report "Error: Unable to open file C:/Users/neos/Desktop/mem_data.txt" severity error;
+            		else
+
+				while temp_str /= "01111111111111111111111111110" loop
+					readline(data_file,line_buffer);
+					read(line_buffer, temp_str);
+					report temp_str(1 to 12);
+					
+					if temp_str /= "01111111111111111111111111110" then
+						for i in 1 to 12 loop
+							if temp_str(i) = '1' then
+								file_address(12 - i) := '1';
+								
+							elsif temp_str(i) = '0' then 
+								file_address(12 - i) := '0';
+							else
+								file_address(12 - i) := 'X';
+							end if;
+						end loop;
+						for i in 14 to 29 loop
+							if temp_str(i) = '1' then
+								file_data(29 - i) := '1';
+								report "char: "&temp_str(i);
+							elsif temp_str(i) = '0' then 
+								file_data(29 - i) := '0';
+							else
+								file_data(29 - i) := 'X';
+								
+							end if;
+
+						end loop;	
+			
+						address_read := to_integer(unsigned(file_address));
+						memory_ds(address_read) <= file_data;	
+					end if;
+				end loop;		
+			end if;
+			file_close(data_file);
+		end if;
+		
+		if mem_r = '1' then
+			data_out <= memory_ds(to_integer(unsigned(address)));
+		end if;
+		
+
+		if mem_w = '1' then
+			if(clk'EVENT and clk = '1') then
+				memory_ds(to_integer(unsigned(address))) <= write_data ;
+				data_out <= write_data;
+			end if;
+		end if;
+	
+	end process;
+	
+end Behavioral; 	
+

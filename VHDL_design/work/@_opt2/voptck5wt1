@@ -1,0 +1,474 @@
+m255
+K4
+z0
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+T_opt2
+!s110 1718002518
+V>D5DV9cz`n;_nz;<XKAQo3
+04 2 10 work cu behavioral 1
+=1-38f3ab684812-6666a356-16e-1d00
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt2
+OL;O;2020.4;71
+Ealu
+Z0 w1717810865
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 8
+Z4 dC:/aliproject/fpga/FPGA_Project
+Z5 8C:/aliproject/fpga/FPGA_Project/ALU.vhd
+Z6 FC:/aliproject/fpga/FPGA_Project/ALU.vhd
+l0
+L6 1
+VN]`7LKcz6;aLk8<gzLG@23
+!s100 W8OTb5m^zW7QLA7DOQX?Z0
+Z7 OL;C;2020.4;71
+32
+Z8 !s110 1718002009
+!i10b 1
+Z9 !s108 1718002009.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/aliproject/fpga/FPGA_Project/ALU.vhd|
+Z11 !s107 C:/aliproject/fpga/FPGA_Project/ALU.vhd|
+!i113 0
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 N]`7LKcz6;aLk8<gzLG@23
+!i122 8
+l75
+L18 95
+VhQ6MV_]Od;5bA<TCn>WU^0
+!s100 >]RVZVoH1KMG>dfE6Gi`e1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Eand_unit
+Z14 w1717811583
+R2
+R3
+!i122 4
+R4
+Z15 8C:/aliproject/fpga/FPGA_Project/and_unit.vhd
+Z16 FC:/aliproject/fpga/FPGA_Project/and_unit.vhd
+l0
+L5 1
+VSTTM:C9MA_ClEIV09:Ti42
+!s100 g0jgCBfUH>0XfGT2DAFJA3
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/aliproject/fpga/FPGA_Project/and_unit.vhd|
+Z18 !s107 C:/aliproject/fpga/FPGA_Project/and_unit.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 8 and_unit 0 22 STTM:C9MA_ClEIV09:Ti42
+!i122 4
+l15
+Z19 L14 12
+V?kQ@JYMZJ1o6^4[LjjF@S3
+!s100 h27iET1cD=jT^TDoP7`Oj0
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 0
+R12
+R13
+Eau
+Z20 w1717810437
+R1
+R2
+R3
+!i122 2
+R4
+Z21 8C:/aliproject/fpga/FPGA_Project/AU.vhd
+Z22 FC:/aliproject/fpga/FPGA_Project/AU.vhd
+l0
+L6 1
+V9]meP;[5UO?63C?=zglZE3
+!s100 LTPHlI[ZPggZDg=9z@jhb1
+R7
+32
+R8
+!i10b 1
+R9
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/aliproject/fpga/FPGA_Project/AU.vhd|
+Z24 !s107 C:/aliproject/fpga/FPGA_Project/AU.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 2 au 0 22 9]meP;[5UO?63C?=zglZE3
+!i122 2
+l20
+L17 26
+VNUgci;fJI?=:o3d_n_Ze;1
+!s100 d7<;A69FVfC`c]AMHPZHK1
+R7
+32
+R8
+!i10b 1
+R9
+R23
+R24
+!i113 0
+R12
+R13
+Eclock
+Z25 w1717807270
+Z26 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z27 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+!i122 9
+R4
+Z28 8C:/aliproject/fpga/hw2/clock.vhd
+Z29 FC:/aliproject/fpga/hw2/clock.vhd
+l0
+L5 1
+VM[F:`IJbh:=onW0l31DNN1
+!s100 :2GN`OaaIEi]W0bnKSXml2
+R7
+32
+R8
+!i10b 1
+R9
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/aliproject/fpga/hw2/clock.vhd|
+Z31 !s107 C:/aliproject/fpga/hw2/clock.vhd|
+!i113 0
+R12
+R13
+Aclock_arch
+R26
+R27
+R2
+R3
+DEx4 work 5 clock 0 22 M[F:`IJbh:=onW0l31DNN1
+!i122 9
+l12
+L9 14
+VXXV<LU5E]V^XUk15?Fj6B3
+!s100 W87;gmNoS`JkJJEAIoQl?0
+R7
+32
+R8
+!i10b 1
+R9
+R30
+R31
+!i113 0
+R12
+R13
+Ecu
+Z32 w1718002505
+R2
+R3
+!i122 15
+R4
+Z33 8C:/aliproject/fpga/FPGA_Project/CU.vhd
+Z34 FC:/aliproject/fpga/FPGA_Project/CU.vhd
+l0
+L5 1
+VlX7c]0UeZ@oMPDdc[EWNl2
+!s100 gz;HiMcBI`4HYm0<8ibFi2
+R7
+32
+Z35 !s110 1718002510
+!i10b 1
+Z36 !s108 1718002510.000000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/aliproject/fpga/FPGA_Project/CU.vhd|
+Z38 !s107 C:/aliproject/fpga/FPGA_Project/CU.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 2 cu 0 22 lX7c]0UeZ@oMPDdc[EWNl2
+!i122 15
+l29
+L16 155
+VVkX=mLI1>0a8hjzY_TY133
+!s100 a]6GNa50W4DDQ6niGIfHZ2
+R7
+32
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 0
+R12
+R13
+Edec_4_16
+Z39 w1717873244
+R2
+R3
+!i122 10
+R4
+Z40 8C:/aliproject/fpga/FPGA_Project/dec_4_16.vhd
+Z41 FC:/aliproject/fpga/FPGA_Project/dec_4_16.vhd
+l0
+L5 1
+Vj@nGG;jA_nhL9;<TJ8ZIW0
+!s100 9>Sgj784TO<d=;_aD2TcC2
+R7
+32
+R8
+!i10b 1
+R9
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/aliproject/fpga/FPGA_Project/dec_4_16.vhd|
+Z43 !s107 C:/aliproject/fpga/FPGA_Project/dec_4_16.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 8 dec_4_16 0 22 j@nGG;jA_nhL9;<TJ8ZIW0
+!i122 10
+l15
+Z44 L13 30
+V9]OT>S1:g=eog?j>A2QUP2
+!s100 `1=;=4`=OodPJS`l9T4j_0
+R7
+32
+R8
+!i10b 1
+R9
+R42
+R43
+!i113 0
+R12
+R13
+Eencod_4_16
+Z45 w1717990094
+R2
+R3
+!i122 11
+R4
+Z46 8C:/aliproject/fpga/FPGA_Project/encod_4_16.vhd
+Z47 FC:/aliproject/fpga/FPGA_Project/encod_4_16.vhd
+l0
+L5 1
+V@:UJePE?TW]5Z9839EU681
+!s100 XI[[Ifa4NG7e?a4a>?K310
+R7
+32
+R8
+!i10b 1
+R9
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/aliproject/fpga/FPGA_Project/encod_4_16.vhd|
+Z49 !s107 C:/aliproject/fpga/FPGA_Project/encod_4_16.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 10 encod_4_16 0 22 @:UJePE?TW]5Z9839EU681
+!i122 11
+l15
+R44
+VcCml=GeYY:?V[F<ZDK59U2
+!s100 _TS[d60N7eb9?9B>JLeoQ3
+R7
+32
+R8
+!i10b 1
+R9
+R48
+R49
+!i113 0
+R12
+R13
+Emux_8
+Z50 w1717805935
+R2
+R3
+!i122 7
+R4
+Z51 8C:/aliproject/fpga/FPGA_Project/mux_8.vhd
+Z52 FC:/aliproject/fpga/FPGA_Project/mux_8.vhd
+l0
+L5 1
+V]<N[RU_Sj6>mFohE84IdO2
+!s100 UE8>Um;K8k?JdbcnOXi@13
+R7
+32
+R8
+!i10b 1
+R9
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/aliproject/fpga/FPGA_Project/mux_8.vhd|
+Z54 !s107 C:/aliproject/fpga/FPGA_Project/mux_8.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 5 mux_8 0 22 ]<N[RU_Sj6>mFohE84IdO2
+!i122 7
+l17
+L15 22
+VK=eRozk8Yo3NFbMQ0WIK?2
+!s100 HGbD<TYdhd4aN?=`=g:Hn3
+R7
+32
+R8
+!i10b 1
+R9
+R53
+R54
+!i113 0
+R12
+R13
+Eor_unit
+Z55 w1717811612
+R2
+R3
+!i122 5
+R4
+Z56 8C:/aliproject/fpga/FPGA_Project/or_unit.vhd
+Z57 FC:/aliproject/fpga/FPGA_Project/or_unit.vhd
+l0
+L5 1
+VKoUHF>5<8H`aIi3JdOfHn0
+!s100 0inD?<gY=3Ad]=0AMZfZ00
+R7
+32
+R8
+!i10b 1
+R9
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/aliproject/fpga/FPGA_Project/or_unit.vhd|
+Z59 !s107 C:/aliproject/fpga/FPGA_Project/or_unit.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 7 or_unit 0 22 KoUHF>5<8H`aIi3JdOfHn0
+!i122 5
+l15
+L14 11
+VmO4>JJjBM=[]lTIk`1X;]2
+!s100 bCIbW2CWCfTlSFQBQnZQ]2
+R7
+32
+R8
+!i10b 1
+R9
+R58
+R59
+!i113 0
+R12
+R13
+Eror_function
+Z60 w1717810453
+R1
+R2
+R3
+!i122 3
+R4
+Z61 8C:/aliproject/fpga/FPGA_Project/ROR.vhd
+Z62 FC:/aliproject/fpga/FPGA_Project/ROR.vhd
+l0
+L6 1
+VDNJ8]T07:>S3aa]NAoLzS0
+!s100 =I:?UmLf[B7PHEWElRfMf2
+R7
+32
+R8
+!i10b 1
+R9
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/aliproject/fpga/FPGA_Project/ROR.vhd|
+Z64 !s107 C:/aliproject/fpga/FPGA_Project/ROR.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+DEx4 work 12 ror_function 0 22 DNJ8]T07:>S3aa]NAoLzS0
+!i122 3
+l19
+L17 18
+VY0W55>DdGYUVoW5d`jWC@1
+!s100 G=[zD1XR3N07`KDSh9XdO1
+R7
+32
+R8
+!i10b 1
+R9
+R63
+R64
+!i113 0
+R12
+R13
+Exor_unit
+Z65 w1717811597
+R2
+R3
+!i122 6
+R4
+Z66 8C:/aliproject/fpga/FPGA_Project/xor_unit.vhd
+Z67 FC:/aliproject/fpga/FPGA_Project/xor_unit.vhd
+l0
+L5 1
+VM8^4:`Zm9_eROllS1`hDU2
+!s100 FZzchHNkMXRWDARHhFbgU3
+R7
+32
+R8
+!i10b 1
+R9
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/aliproject/fpga/FPGA_Project/xor_unit.vhd|
+Z69 !s107 C:/aliproject/fpga/FPGA_Project/xor_unit.vhd|
+!i113 0
+R12
+R13
+Abehavioral
+R2
+R3
+DEx4 work 8 xor_unit 0 22 M8^4:`Zm9_eROllS1`hDU2
+!i122 6
+l15
+R19
+V9^hlLnZldKT1jE48mD]D>1
+!s100 AESQcZ;7JUZ8=RN4WRoXJ2
+R7
+32
+R8
+!i10b 1
+R9
+R68
+R69
+!i113 0
+R12
+R13

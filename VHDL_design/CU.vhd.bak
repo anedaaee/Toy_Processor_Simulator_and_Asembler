@@ -1,0 +1,236 @@
+library ieee;
+use ieee.STD_LOGIC_1164.all;
+
+
+entity CU is 
+	port (
+		op : in std_logic_vector(3 downto 0)  := (others => '0');
+		clk : in std_logic := '0';
+		pcw,mem_r,mem_w,mem_wd_src,ir,t_w,md_w,a_w,src_a,c_w,z_w,alu_out_w,clean_c,bcc,bne : out std_logic := '0' ;
+		pc_src,alu_src , mem_src : out std_logic_vector(1 downto 0) := (others => '0');
+		alu_op : out std_logic_vector(3 downto 0) := (others => '0')
+	);
+end CU;
+
+
+architecture Behavioral of CU is
+	component dec_4_16 is 
+		port (
+			input : in std_logic_vector(3 downto 0);
+			output : out std_logic_vector(15 downto 0) := (others => '0')
+		);
+	end component;
+
+	type state is (state_init,state_0,state_1,state_2,state_3,state_4,state_5,state_6,state_7,state_8,state_9,state_10,state_11,state_12,state_hold);
+	signal cur_state : state := state_init;
+	signal nx_state : state := state_0;
+	signal dec_in : std_logic_vector(3 downto 0) := (others => '0');
+	signal dec_out : std_logic_vector(15 downto 0) := (others => '0');
+begin
+	dec_in <= op;
+	dec_ins : dec_4_16 port map (input => dec_in , output => dec_out);
+
+ 	process(clk)
+    	begin
+        	if (clk'EVENT and clk = '1') then
+            		cur_state <= nx_state;
+        	end if;
+    	end process;
+
+	process(cur_state)
+	
+	begin
+		
+		dec_in <= op;
+		mem_r      <= '0';
+                ir         <= '0';
+                pcw        <= '0';
+                mem_w      <= '0';
+                mem_wd_src <= '0';
+                t_w        <= '0';
+                md_w       <= '0';
+                a_w        <= '0';
+                src_a      <= '0';
+                c_w        <= '0';
+                z_w        <= '0';
+                alu_out_w  <= '0';
+                clean_c    <= '0';
+                bcc        <= '0';
+                bne        <= '0';
+                pc_src     <= "00";
+                alu_src    <= "00";
+		alu_op 	   <= "0000";
+		mem_src <= "00";
+			case cur_state is
+			
+				when state_init => 
+				
+				mem_r      <= '0';
+               			ir         <= '0';
+                		pcw        <= '0';
+               			mem_w      <= '0';
+                		mem_wd_src <= '0';
+                		t_w        <= '0';
+                		md_w       <= '0';
+                		a_w        <= '0';
+                		src_a      <= '0';
+               			c_w        <= '0';
+                		z_w        <= '0';
+                		alu_out_w  <= '0';
+                		clean_c    <= '0';
+                		bcc        <= '0';
+                		bne        <= '0';
+               	 		pc_src     <= "00";
+                		alu_src    <= "00";
+				alu_op 	   <= "0000";
+				mem_src <= "00";
+				when state_0 => 
+					report "state0";
+					mem_r <= '1';
+					ir <= '1';
+					mem_src <= "00";
+					nx_state <= state_hold;
+				when state_hold =>
+					report "state hold"; 
+					if op = "1100" then
+						nx_state <= state_1;
+					else then
+						nx_state <= state_3;
+					end if;
+				when state_1 =>
+					report "state1";
+					mem_r <= '1';
+					md_w <= '1';
+					src_a <= '1';
+					alu_out_w <= '1';
+					pc_src <= "11";
+					nx_state <= state_2;
+					alu_op <= "0100";
+					mem_src <= "01";
+				when state_2 => 
+					report "state2";
+					pcw <= '1';
+					a_w <= '1';
+					nx_state <= state_0;
+				when state_3 => 
+					report "state3";
+					mem_r <= '1';
+					md_w <= '1';
+					mem_src <= "10";
+					report "op: " & std_logic'IMAGE(op(3))& std_logic'IMAGE(op(2))& std_logic'IMAGE(op(1))& std_logic'IMAGE(op(0));
+					report "d out 14 " & std_logic'IMAGE(dec_out(14));
+					if op = "0000" then
+						nx_state <= state_4;
+					elsif op = "1010" then 
+						nx_state <= state_5;
+					elsif (op = "0001" or op = "0010" or op = "0011" or op = "0100" or op = "0110" or op = "1000") then 
+						nx_state <= state_6;
+					elsif op = "1011" then 
+						nx_state <= state_7;
+					elsif op = "0101" then 
+						nx_state <= state_8;
+					elsif op = "1111" then 
+						nx_state <= state_9;
+					elsif op = "1100" then 
+						nx_state <= state_10;
+					elsif op = "1110" then 
+						nx_state <= state_11;
+					elsif op = "1001" then 
+						nx_state <= state_12;
+					else 
+						report "nothin in decoder";
+					end if;
+					alu_op <= "0100";
+					alu_src <= "11";
+					alu_out_w <= '1';
+				when state_4 => 
+					report "state4";
+					pcw <= '1';
+					pc_src <= "01";
+					nx_state <= state_0;
+				when state_5 => 
+					report "state5";
+					pcw <= '1';
+					bcc <= '1';
+					pc_src <= "10";
+					nx_state <= state_0;
+				when state_6 =>
+					report "state6";
+					pcw <= '1';
+					a_w <= '1';
+					src_a <= '1';
+					c_w <= '1';
+					z_w <= '1';
+					nx_state <= state_0;
+					if op = "0001" then 
+						alu_op <= "0100";
+					elsif op = "0010" then 
+						alu_op <= "0011";
+					elsif op = "0011" then 
+						alu_op <= "1100";
+					elsif op = "0100" then 
+						alu_op <= "0000";
+					elsif op = "0110" then 
+						alu_op <= "0010";
+					elsif op = "1000" then 
+						alu_op <= "0001";
+					end if;
+				when state_7 => 
+					report "state7";
+					pcw <= '1';
+					bne <= '1';
+					pc_src <= "10";
+					nx_state <= state_0;
+				when state_8 =>
+					report "state8";
+					pcw <= '1';
+					t_w <= '1';
+					nx_state <= state_0;
+				when state_9 => 	
+					report "state9";
+					pcw <= '1';
+					mem_w <= '1';
+					mem_src <= "10";
+					nx_state <= state_0;
+				when state_10 => 
+					report "state10";
+					pcw <= '1';
+					mem_w <= '1';
+					mem_wd_src <= '1';
+					mem_src <= "01";
+					nx_state <= state_0;
+				when state_11 =>
+					report "state11";
+					pcw <= '1';
+					a_w <= '1';
+					nx_state <= state_0;
+				when state_12 => 
+					report "state12";
+					pcw <= '1';
+					a_w <= '1';
+					clean_c <= '1';
+					nx_state <= state_0;
+               			when others =>
+                    			mem_r      <= '0';
+                    			ir         <= '0';
+                    			pcw        <= '0';
+                    			mem_w      <= '0';
+                    			mem_wd_src <= '0';
+                    			t_w        <= '0';
+                    			md_w       <= '0';
+                    			a_w        <= '0';
+                    			src_a      <= '0';
+                    			c_w        <= '0';
+                    			z_w        <= '0';
+                    			alu_out_w  <= '0';
+                    			clean_c    <= '0';
+                    			bcc        <= '0';
+                    			bne        <= '0';
+                    			pc_src     <= "00";
+                    			alu_src    <= "00";
+					alu_op 	   <= "0000";
+					mem_src <= "00";
+			end case;
+		
+	end process;
+end Behavioral;

@@ -1,0 +1,176 @@
+C:/aliproject/fpga/FPGA_Project/CU.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/CU.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CU
+-- Compiling architecture Behavioral of CU
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/mux_2_16bit.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/mux_2_16bit.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Mux_2_16bit
+-- Compiling architecture Behavioral of Mux_2_16bit
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/or_unit.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/or_unit.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Or_unit
+-- Compiling architecture Behavioral of Or_unit
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/mux_8.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/mux_8.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Mux_8
+-- Compiling architecture Behavioral of Mux_8
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/ALU.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:\aliproject\fpga\FPGA_Project\ALU.vhd}
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture Behavioral of ALU
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/mux_4_16bit.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/mux_4_16bit.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Mux_4_16bit
+-- Compiling architecture Behavioral of Mux_4_16bit
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/DP.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/DP.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DataPath
+-- Compiling architecture DataFlow of DataPath
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/dec_4_16.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/dec_4_16.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dec_4_16
+-- Compiling architecture Behavioral of dec_4_16
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/xor_unit.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/xor_unit.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Xor_unit
+-- Compiling architecture Behavioral of Xor_unit
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/memory.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/memory.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity memory
+-- Compiling architecture Behavioral of memory
+
+} {} {}} C:/aliproject/fpga/hw2/clock.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/hw2/clock.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity clock
+-- Compiling architecture clock_arch of clock
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/12-bit-register.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/12-bit-register.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Register12
+-- Compiling architecture Behavioral of Register12
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/encod_4_16.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/encod_4_16.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity encod_4_16
+-- Compiling architecture Behavioral of encod_4_16
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/and_unit.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/and_unit.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity And_unit
+-- Compiling architecture Behavioral of And_unit
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/ROR.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/ROR.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ROR_function
+-- Compiling architecture Behavioral of ROR_function
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/mux_2_12bit.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/mux_2_12bit.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Mux_2_12bit
+-- Compiling architecture Behavioral of Mux_2_12bit
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/16-bit-register.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/16-bit-register.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Register16
+-- Compiling architecture Behavioral of Register16
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/AU.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/AU.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity AU
+-- Compiling architecture Behavioral of AU
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/mux_4_12bit.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/mux_4_12bit.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Mux_4_12bit
+-- Compiling architecture Behavioral of Mux_4_12bit
+
+} {} {}} C:/aliproject/fpga/FPGA_Project/1-bit-register.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none C:/aliproject/fpga/FPGA_Project/1-bit-register.vhd
+Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ff
+-- Compiling architecture Behavioral of ff
+
+} {} {}}

@@ -1,0 +1,109 @@
+m255
+K4
+z2
+!s8c locked
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+!s95 MTI
+cModel Technology Builtin Library
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+dC:/cygwin/pc_home/rhino/buildsites/2020.p/builds/win64/modeltech
+Penv
+!i122 1
+Z0 w1602644074
+Z1 d$MODEL_TECH/..
+Z2 8vhdl_src/std/env.vhd
+Z3 Fvhdl_src/std/env.vhd
+l0
+L1 1
+Vd?`1ck@NdeD@H3RZG7FgZ2
+!s100 d?`1ck@NdeD@H3RZG7FgZ2
+Z4 OL;C;2020.4;71
+32
+b1
+Z5 !s110 1602644226
+!i10b 1
+Z6 !s108 1602644226.000000
+Z7 !s90 -debuglib|-suppress|12110|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/env.vhd|
+Z8 !s107 vhdl_src/std/env.vhd|
+!i113 1
+Z9 o-suppress 12110 -debuglib -work std -dirpath {$MODEL_TECH/..}
+Z10 tExplicit 1 CvgOpt 0
+Bbody
+DPx4 work 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+!i122 1
+l0
+L15 1
+VGO=IeNa]6JLe2BRN4G<kA2
+!s100 GO=IeNa]6JLe2BRN4G<kA2
+R4
+32
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Pstandard
+!i122 0
+R0
+R1
+8vhdl_src/std/standard.vhd
+Fvhdl_src/std/standard.vhd
+l0
+L8 1
+VofRa6alAEoSE^5WcJ^O]C2
+!s100 ofRa6alAEoSE^5WcJ^O]C2
+R4
+33
+R5
+!i10b 1
+R6
+!s90 -debuglib|-suppress|12110|-s|-2008|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/standard.vhd|
+!s107 vhdl_src/std/standard.vhd|
+!i113 1
+o-suppress 12110 -debuglib -s -2008 -work std -dirpath {$MODEL_TECH/..}
+R10
+Ptextio
+!i122 2
+Z11 w1578762055
+R1
+Z12 8vhdl_src/std/textio.vhd
+Z13 Fvhdl_src/std/textio.vhd
+l0
+L1 1
+VzE1`LPoLg^DX3Oz^4Fj1K3
+!s100 zE1`LPoLg^DX3Oz^4Fj1K3
+R4
+33
+b1
+R5
+!i10b 1
+R6
+Z14 !s90 -debuglib|-suppress|12110|-2008|-work|std|-dirpath|$MODEL_TECH/..|vhdl_src/std/textio.vhd|
+Z15 !s107 vhdl_src/std/textio.vhd|
+!i113 1
+Z16 o-suppress 12110 -debuglib -2008 -work std -dirpath {$MODEL_TECH/..}
+R10
+Bbody
+DPx4 work 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+!i122 2
+l0
+L186 1
+VOBFf4Pj<FG4ZXfzD:k]VN1
+!s100 OBFf4Pj<FG4ZXfzD:k]VN1
+R4
+33
+R5
+!i10b 1
+R6
+R14
+R15
+!i113 1
+R16
+R10
